@@ -1,31 +1,62 @@
-const express = require('express');
-const app = express();
-const hbs = require('hbs');
-const path = require('path');
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './App.css';
+import Skills from './pages/Skills';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Footer from './component/Footer';
+import skills from './img/skills.png';
+import project from './img/projects.png';
+import home from './img/home.png';
 
-const publicDir = path.join(__dirname, '../public');
-const viewsPath = path.join(__dirname, '../templates/views');
-const partialPath = path.join(__dirname, '../templates/partial');
+class App extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
 
-//set up hbs folder location
-app.set('view engine', 'hbs');
-app.set('views', viewsPath);
-hbs.registerPartials(partialPath);
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <nav className="Navi">
+            <ul>
+              <li>
+                <Link to="/">
+                  {' '}
+                  <img src={home} alt="Home" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/skills">
+                  <img src={skills} alt="Skills" />
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects">
+                  <img src={project} alt="Projects" />
+                </Link>
+              </li>
+              <li></li>
+            </ul>
+          </nav>
 
-//static directory
-app.use(express.static(publicDir));
+          <Switch>
+            <Route path="/skills">
+              <Skills />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
 
-app.get('', (req, res) => {
-  res.render('index', { title: 'Welcome' });
-});
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+        <Footer></Footer>
+      </Router>
+    );
+  }
+}
 
-app.get('/skills', (req, res) => {
-  res.render('skills', { title: 'Skills' });
-});
-
-app.get('/contact', (req, res) => {
-  res.render('contact', { title: 'Contact me' });
-});
-app.listen(4000, () => {
-  console.log('server is up on port 4000');
-});
+export default App;
