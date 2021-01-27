@@ -1,0 +1,41 @@
+@import 'global/fonts.scss';
+@import 'global/color.scss';
+
+.Card {
+  border: 10px ridge #77966d;
+  border-radius: 25px;
+  width: 300px;
+  height: auto;
+  margin: 3%;
+}
+
+.Card img {
+  height: auto;
+  width: 200px;
+  /* margin: 5%; */
+  padding: 5%;
+  border-bottom: 5px inset #626d58;
+}
+
+.Card h3 {
+  font-family: $body;
+}
+.Card p {
+  font-family: $body;
+}
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom)*/
+}
+
+.Row {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}

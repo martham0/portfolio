@@ -1,7 +1,7 @@
 import React from 'react';
-import Cuisine from '../img/Cuisine.png';
-import Pokedex from '../img/Pokedex.png';
-import Weather from '../img/Weather.png';
+import Cuisine from '../assets/img/Cuisine.png';
+import Pokedex from '../assets/img/Pokedex.png';
+import Weather from '../assets/img/Weather.png';
 
 const Card = ({ name, src, tech }) => {
   const img = {

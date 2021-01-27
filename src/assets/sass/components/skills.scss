@@ -1,0 +1,17 @@
+@import 'global/fonts.scss';
+@import 'global/color.scss';
+
+.Skills {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5%;
+}
+.Skills li {
+  font-family: $body;
+  list-style-type: none;
+  padding-bottom: 5%;
+  font-size: 24px;
+}

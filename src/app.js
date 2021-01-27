@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import './App.css';
+import './assets/sass/main.scss';
 import Skills from './pages/Skills';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Footer from './component/Footer';
-import skills from './img/skills.png';
-import project from './img/projects.png';
-import home from './img/home.png';
+import skills from './assets/img/skills.png';
+import project from './assets/img/projects.png';
+import home from './assets/img/home.png';
 
 class App extends Component {
   // constructor(props) {

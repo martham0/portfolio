@@ -1,0 +1,153 @@
+@import 'global/fonts.scss';
+@import 'global/color.scss';
+
+.App {
+  text-align: center;
+  min-height: 80vh;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+//fonts
+// @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Montserrat:wght@700&display=swap');
+
+// /* Navigation */
+// .Navi {
+//   display: inline-block;
+//   width: 100%;
+//   text-align: center;
+//   background-color: #626d58;
+// }
+
+// .Navi li {
+//   list-style-type: none;
+//   padding: 1.5%;
+//   display: inline-block;
+// }
+// .Navi li a {
+//   text-decoration: none !important;
+// }
+// .Navi li a:visited {
+//   color: black;
+// }
+// .Navi img {
+//   width: auto;
+//   height: 55px;
+//   filter: drop-shadow(-15px 10px 4px rgba(0, 0, 0, 0.2));
+// }
+
+/* Footer */
+
+// .Footer {
+//   display: block;
+//   text-align: center;
+//   font-family: $body;
+// }
+// .Footer a {
+//   text-decoration: none !important;
+//   color: none;
+// }
+// .Footer a:visited {
+//   color: black;
+// }
+// .Footer img {
+//   margin-left: 2%;
+//   margin-right: 2%;
+//   width: auto;
+//   height: 55px;
+// }
+// .signature a p {
+//   margin-bottom: 1%;
+// }
+/* HOME PAGE */
+// .Home {
+//   font-size: 30px;
+// }
+// .Home h2 {
+//   font-family: $header;
+// }
+// .Home p {
+//   font-family: $body;
+// }
+
+// .Home .blink {
+//   animation: blink-animation 1s steps(5, start) infinite;
+//   -webkit-animation: blink-animation 1s steps(5, start) infinite;
+// }
+// @keyframes blink-animation {
+//   to {
+//     visibility: hidden;
+//   }
+// }
+// @-webkit-keyframes blink-animation {
+//   to {
+//     visibility: hidden;
+//   }
+// }
+
+// /* SKILLS */
+// .Skills {
+//   -webkit-column-count: 2;
+//   -moz-column-count: 2;
+//   column-count: 2;
+//   padding-left: 5%;
+//   padding-right: 5%;
+//   margin-bottom: 5%;
+// }
+// .Skills li {
+//   font-family: $body;
+//   list-style-type: none;
+//   padding-bottom: 5%;
+//   font-size: 24px;
+// }
+
+// /* Projects */
+// .Card {
+//   border: 10px ridge #77966d;
+//   border-radius: 25px;
+//   width: 300px;
+//   height: auto;
+//   margin: 3%;
+// }
+
+// .Card img {
+//   height: auto;
+//   width: 200px;
+//   /* margin: 5%; */
+//   padding: 5%;
+//   border-bottom: 5px inset #626d58;
+// }
+
+// .Card h3 {
+//   font-family: $body;
+// }
+// .Card p {
+//   font-family: $body;
+// }
+// .zoom {
+//   transition: transform 0.2s; /* Animation */
+//   margin: 0 auto;
+// }
+
+// .zoom:hover {
+//   transform: scale(1.5); /* (150% zoom)*/
+// }
+
+// .Row {
+//   display: flex;
+//   justify-content: space-around;
+//   margin-left: 10%;
+//   margin-right: 10%;
+//   margin-bottom: 3%;
+// }
+
+/* Title */
+.Header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0%;
+  margin-bottom: 3%;
+  font-family: $header;
+  font-size: 70px;
+  border-bottom: inset;
+}

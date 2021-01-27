@@ -1,0 +1,26 @@
+@import 'global/fonts.scss';
+@import 'global/color.scss';
+
+.Navi {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #626d58;
+}
+
+.Navi li {
+  list-style-type: none;
+  padding: 1.5%;
+  display: inline-block;
+}
+.Navi li a {
+  text-decoration: none !important;
+}
+.Navi li a:visited {
+  color: black;
+}
+.Navi img {
+  width: auto;
+  height: 55px;
+  filter: drop-shadow(-15px 10px 4px rgba(0, 0, 0, 0.2));
+}

@@ -1,0 +1,27 @@
+@import 'global/fonts.scss';
+@import 'global/color.scss';
+
+.Home {
+  font-size: 30px;
+}
+.Home h2 {
+  font-family: $header;
+}
+.Home p {
+  font-family: $body;
+}
+
+.Home .blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
